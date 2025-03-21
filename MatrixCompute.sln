@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{091736D5-A6C1-422A-93AC-6BB636C4A7AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatrixCompute.Runner", "src\MatrixCompute.Runner\MatrixCompute.Runner.csproj", "{36FA0993-0244-4894-BB14-2286713ED426}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{19592DF3-8512-4BDC-8340-C96A75A2DBC5}"
+	ProjectSection(SolutionItems) = preProject
+		compose.yaml = compose.yaml
+		Dockerfile = Dockerfile
+		.dockerignore = .dockerignore
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatrixCompute.Core", "src\MatrixCompute.Core\MatrixCompute.Core.csproj", "{C46F961D-2D99-4B70-9341-60CB26075CED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{36FA0993-0244-4894-BB14-2286713ED426}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36FA0993-0244-4894-BB14-2286713ED426}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36FA0993-0244-4894-BB14-2286713ED426}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36FA0993-0244-4894-BB14-2286713ED426}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C46F961D-2D99-4B70-9341-60CB26075CED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C46F961D-2D99-4B70-9341-60CB26075CED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C46F961D-2D99-4B70-9341-60CB26075CED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C46F961D-2D99-4B70-9341-60CB26075CED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{36FA0993-0244-4894-BB14-2286713ED426} = {091736D5-A6C1-422A-93AC-6BB636C4A7AA}
+		{C46F961D-2D99-4B70-9341-60CB26075CED} = {091736D5-A6C1-422A-93AC-6BB636C4A7AA}
+	EndGlobalSection
+EndGlobal
