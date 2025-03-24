@@ -10,10 +10,6 @@ internal sealed class Benchmark
 
     internal void Run(IMultiplier multiplier, int dimension)
     {
-        Console.WriteLine($"-------------- {multiplier.GetType().Name} --------------");
-        Console.WriteLine("{0,6} | {1,6} | {2,20} ", "n", "s", "Execution time (ms)");
-        Console.WriteLine("--------------------------------------------");
-
         Matrix matrixA = Matrix.GenerateRandomMatrix(dimension, dimension);
         Matrix matrixB = Matrix.GenerateRandomMatrix(dimension, dimension);
 
@@ -22,8 +18,6 @@ internal sealed class Benchmark
         _sw.Stop();
         double duration = _sw.Elapsed.TotalMilliseconds;
 
-        Console.WriteLine("{0,6} | {1,6} | {2,20:F4}", dimension, dimension, duration);
-
-        Console.WriteLine("--------------------------------------------");
+        Console.WriteLine(duration);
     }
 }
